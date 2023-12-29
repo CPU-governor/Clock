@@ -1,4 +1,4 @@
-U nano 7.2             script.sh
+# Clock
 echo "==========TIMER=========="
 echo "Set timer in :"
 echo "1. hours"
