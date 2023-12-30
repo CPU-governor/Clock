@@ -1,4 +1,5 @@
 # Clock
+prompt (T) {
 echo "==========TIMER=========="
 echo "Set timer in :"
 echo "1. hours"
@@ -19,9 +20,12 @@ else if ["$option" -eq 3]; then
     T_s=T
 else 
     echo "invalid option"
-for ((i=10; i>=0; i--)); do
+    }
+    
+    prompt (T)
+for ((i=T; i>=0; i--)); do
     echo "Timer: $i seconds left"
-    sleep 10
+    sleep T
 done
 
 echo "Timer done!"
